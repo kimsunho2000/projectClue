@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-01-22T07:32:59.661Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="dTI0FdbbE6jejKBH7nCQ" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-22T07:53:48.004Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="6rOyMC15m0ckhgFQhHAy" version="22.1.21" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1360" dy="1051" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="954" dy="589" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -157,7 +157,7 @@
             <mxPoint x="2" y="-5" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="x7-LNOzd_y7LWEpH87d2-51" value="Dumpling Stack == 8" style="rhombus;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="x7-LNOzd_y7LWEpH87d2-51" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Dumpling Stack == 8&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="44" y="960" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="x7-LNOzd_y7LWEpH87d2-58" value="Defeat" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
@@ -293,11 +293,16 @@
             <mxPoint x="-3" y="-9" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M1RIeBNeU6oS1C84WoOZ-26" value="Use Bonus Card?" style="rhombus;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="M1RIeBNeU6oS1C84WoOZ-26" value="Use Bonus Card?&lt;br&gt;(After First Turn)" style="rhombus;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="284" y="400" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="M1RIeBNeU6oS1C84WoOZ-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="M1RIeBNeU6oS1C84WoOZ-27" target="x7-LNOzd_y7LWEpH87d2-26" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="M1RIeBNeU6oS1C84WoOZ-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="M1RIeBNeU6oS1C84WoOZ-27" target="x7-LNOzd_y7LWEpH87d2-26" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="264" y="490" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="184" y="490" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="M1RIeBNeU6oS1C84WoOZ-27" value="Select Bonus Card" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="124" y="400" width="120" height="40" as="geometry" />
@@ -410,19 +415,14 @@
         <mxCell id="M1RIeBNeU6oS1C84WoOZ-62" value="Reveal reasoning result to specific players" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="684" y="960" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="M1RIeBNeU6oS1C84WoOZ-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1">
+        <mxCell id="M1RIeBNeU6oS1C84WoOZ-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1" target="x7-LNOzd_y7LWEpH87d2-26">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="200" y="1140" />
-              <mxPoint x="200" y="500" />
+              <mxPoint x="194" y="1140" />
+              <mxPoint x="194" y="510" />
             </Array>
             <mxPoint x="540.0000000000002" y="1140" as="sourcePoint" />
-            <mxPoint x="300" y="500" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="tll5qI-ycoQo29pYIUhQ-0" value="&amp;lt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="M1RIeBNeU6oS1C84WoOZ-83">
-          <mxGeometry x="-0.7747" y="-2" relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="234" y="510" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="M1RIeBNeU6oS1C84WoOZ-81" value="Next player" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
