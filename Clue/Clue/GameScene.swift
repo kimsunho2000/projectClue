@@ -11,7 +11,7 @@ import GameplayKit
 class GameScene: SKScene {
     
     private var label : SKLabelNode?
-    private var spinnyNode : SKShapeNode?
+    private var spinnyNode : SKSpriteNode?
     
     override func didMove(to view: SKView) {
         
@@ -23,12 +23,9 @@ class GameScene: SKScene {
         }
         
         // Create shape node to use during mouse interaction
-        let w = (self.size.width + self.size.height) * 0.05
-        self.spinnyNode = SKShapeNode.init(rectOf: CGSize.init(width: w, height: w), cornerRadius: w * 0.3)
+        self.spinnyNode = SKSpriteNode(imageNamed:"ce.jpeg")
         
         if let spinnyNode = self.spinnyNode {
-            spinnyNode.lineWidth = 2.5
-            
             spinnyNode.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(Double.pi), duration: 1)))
             spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: 0.5),
                                               SKAction.fadeOut(withDuration: 0.5),
@@ -38,25 +35,22 @@ class GameScene: SKScene {
     
     
     func touchDown(atPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
+        if let n = self.spinnyNode?.copy() as! SKSpriteNode? {
             n.position = pos
-            n.strokeColor = SKColor.green
             self.addChild(n)
         }
     }
     
     func touchMoved(toPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
+        if let n = self.spinnyNode?.copy() as! SKSpriteNode? {
             n.position = pos
-            n.strokeColor = SKColor.blue
             self.addChild(n)
         }
     }
     
     func touchUp(atPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
+        if let n = self.spinnyNode?.copy() as! SKSpriteNode? {
             n.position = pos
-            n.strokeColor = SKColor.red
             self.addChild(n)
         }
     }
