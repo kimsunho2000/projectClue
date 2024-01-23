@@ -10,25 +10,25 @@ import SpriteKit
 import GameplayKit
 
 class GameViewController: UIViewController {
-
+    
+    @IBOutlet weak var WelcomeLabel: UILabel!
+    
+    @IBOutlet weak var getID: UITextField!
+    
+    @IBOutlet weak var getPW: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    @IBAction func loginButton(_ sender: Any) {
+    }
+    
+    @IBAction func findButton(_ sender: Any) {
         
-        if let view = self.view as! SKView? {
-            // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "GameScene") {
-                // Set the scale mode to scale to fit the window
-                scene.scaleMode = .aspectFill
-                
-                // Present the scene
-                view.presentScene(scene)
-            }
-            
-            view.ignoresSiblingOrder = true
-            
-            view.showsFPS = true
-            view.showsNodeCount = true
-        }
+    }
+    
+    @IBAction func enrollButton(_ sender: Any) {
     }
 
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
