@@ -18,6 +18,7 @@
 		D8214B282B53C5C9002DA335 /* ClueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8214B272B53C5C9002DA335 /* ClueTests.swift */; };
 		D8214B322B53C5C9002DA335 /* ClueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8214B312B53C5C9002DA335 /* ClueUITests.swift */; };
 		D8214B342B53C5C9002DA335 /* ClueUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8214B332B53C5C9002DA335 /* ClueUITestsLaunchTests.swift */; };
+		D8A2D1312B624EFA0037690B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A2D1302B624EFA0037690B /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		D8214B2D2B53C5C9002DA335 /* ClueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8214B312B53C5C9002DA335 /* ClueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClueUITests.swift; sourceTree = "<group>"; };
 		D8214B332B53C5C9002DA335 /* ClueUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClueUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D8A2D1302B624EFA0037690B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				D8214B172B53C5C8002DA335 /* Main.storyboard */,
 				D8214B1A2B53C5C9002DA335 /* Assets.xcassets */,
 				D8214B1C2B53C5C9002DA335 /* LaunchScreen.storyboard */,
+				D8A2D1302B624EFA0037690B /* LoginViewController.swift */,
 			);
 			path = Clue;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8A2D1312B624EFA0037690B /* LoginViewController.swift in Sources */,
 				D8214B142B53C5C8002DA335 /* GameScene.swift in Sources */,
 				D8214B162B53C5C8002DA335 /* GameViewController.swift in Sources */,
 				D8214B0E2B53C5C8002DA335 /* AppDelegate.swift in Sources */,
