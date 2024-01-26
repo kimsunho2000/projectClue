@@ -63,6 +63,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="St3-hs-zb4">
+                                <rect key="frame" x="96" y="416" width="210" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Kw9-GR-0tg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -87,6 +94,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="452-f2-Ksm"/>
                     <connections>
+                        <outlet property="errorMessageLabel" destination="St3-hs-zb4" id="wv2-Iu-RD4"/>
                         <outlet property="idTextfield" destination="3YS-rx-NYa" id="oAY-f3-QEd"/>
                         <outlet property="pwTextfield" destination="Dna-IW-2Vp" id="uRn-h0-Znb"/>
                         <outlet property="welcomeLabel" destination="Bji-lS-O94" id="y26-cP-0UC"/>
