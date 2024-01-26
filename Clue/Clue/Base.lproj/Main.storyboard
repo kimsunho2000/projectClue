@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3YS-rx-NYa">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3YS-rx-NYa">
                                 <rect key="frame" x="96" y="283" width="200" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -24,7 +24,7 @@
                                     <action selector="id:" destination="nzI-UQ-i37" eventType="editingDidEnd" id="kdp-oN-PB5"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PW" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dna-IW-2Vp">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PW" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dna-IW-2Vp">
                                 <rect key="frame" x="96" y="360" width="200" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -32,7 +32,7 @@
                                     <action selector="pw:" destination="nzI-UQ-i37" eventType="editingDidEnd" id="fB0-5M-hKw"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Az7-bK-xhQ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Az7-bK-xhQ">
                                 <rect key="frame" x="142" y="547" width="108" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Find ID/PW"/>
@@ -40,7 +40,7 @@
                                     <action selector="findButton:" destination="Cfl-PJ-ybP" eventType="touchUpInside" id="ylH-0M-se3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXH-2H-lLy">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXH-2H-lLy">
                                 <rect key="frame" x="142" y="458" width="108" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Login"/>
@@ -49,7 +49,7 @@
                                     <segue destination="VuC-yH-gdL" kind="show" id="r1Z-ZI-MJw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7EA-yN-i7C">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7EA-yN-i7C">
                                 <rect key="frame" x="155" y="612" width="82" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign up"/>
@@ -58,7 +58,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bji-lS-O94">
-                                <rect key="frame" x="121" y="121" width="151" height="42"/>
+                                <rect key="frame" x="120.66666666666669" y="121" width="151" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -71,7 +71,6 @@
                             <constraint firstItem="Az7-bK-xhQ" firstAttribute="top" secondItem="KXH-2H-lLy" secondAttribute="bottom" constant="54" id="5x3-jv-bpp"/>
                             <constraint firstItem="Dna-IW-2Vp" firstAttribute="top" secondItem="3YS-rx-NYa" secondAttribute="bottom" constant="43" id="6Q6-pf-QKv"/>
                             <constraint firstItem="7EA-yN-i7C" firstAttribute="leading" secondItem="Kw9-GR-0tg" secondAttribute="leading" constant="155" id="8AZ-5C-a7I"/>
-                            <constraint firstItem="3YS-rx-NYa" firstAttribute="centerX" secondItem="i3V-OX-jGC" secondAttribute="centerX" id="Af3-oC-fKB"/>
                             <constraint firstItem="KXH-2H-lLy" firstAttribute="top" secondItem="Dna-IW-2Vp" secondAttribute="bottom" constant="64" id="CeO-OE-Lkt"/>
                             <constraint firstItem="3YS-rx-NYa" firstAttribute="leading" secondItem="Dna-IW-2Vp" secondAttribute="leading" id="FY1-XG-Kb4"/>
                             <constraint firstItem="7EA-yN-i7C" firstAttribute="top" secondItem="Az7-bK-xhQ" secondAttribute="bottom" constant="30" id="JNI-v5-ROp"/>
