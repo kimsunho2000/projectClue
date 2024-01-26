@@ -9,22 +9,70 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
+    struct UserList: Codable {
+        let totalCount: Int
+        let users: [User]
+    }
+
+    struct User: Codable {
+        let id: String
+        let pw: String
+    }
+    
     @IBOutlet weak var welcomeLabel: UILabel!
-    
     @IBOutlet weak var idTextfield: UITextField!
-    
     @IBOutlet weak var pwTextfield: UITextField!
     
+<<<<<<< HEAD
     @IBOutlet weak var errorMessageLabel: UILabel!
     
     @IBAction func loginButton(_ sender: Any) {
+=======
+    func load() -> Data? {
+        guard let fileLocation = Bundle.main.url(forResource: "temp", withExtension: "json") else { return nil }
+>>>>>>> main
         
+        do {
+            let data = try Data(contentsOf: fileLocation)
+            return data
+        } catch {
+            return nil
+        }
+    }
+    
+    @IBAction func loginButton(_ sender: Any) {
+        var loginFailed: Bool = true
+        var id: String? = idTextfield.text!
+        var pw: String? = pwTextfield.text!
+        
+        guard
+            let jsonData = load(),
+            let userList = try? JSONDecoder().decode(UserList.self, from: jsonData)
+        else { return }
+        
+        for i in 0..<userList.totalCount{
+            if userList.users[i].id == id && userList.users[i].pw == pw{
+                loginFailed = false
+            }
+        }
+        
+        if !loginFailed {
+            let success = UIAlertController(title: "Login", message: "Success", preferredStyle: .alert)
+            success.addAction(UIAlertAction(title: "확인", style: .cancel, handler: nil))
+            present(success, animated: true)
+        } else {
+            let failed = UIAlertController(title: "Login", message: "Failed", preferredStyle: .alert)
+            failed.addAction(UIAlertAction(title: "확인", style: .cancel, handler: nil))
+            present(failed, animated: true)
+        }
     }
     
     @IBAction func findButton(_ sender: Any) {
+        
     }
     
     @IBAction func signupButton(_ sender: Any) {
+<<<<<<< HEAD
     }
     @objc private func detectingLoginInput(_textField: UITextField){ //this function can detect user's login input.if user write wrong input,each input bar will change to red background and alert them to rewrite.
         let regularExpressionPattern = "^[a-zA-Z0-9]*$" //only alphabet,digits available
@@ -54,16 +102,12 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+=======
+        
+>>>>>>> main
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
-    */
-
+}
