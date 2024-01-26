@@ -23,15 +23,11 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var idTextfield: UITextField!
     @IBOutlet weak var pwTextfield: UITextField!
     
-<<<<<<< HEAD
     @IBOutlet weak var errorMessageLabel: UILabel!
     
-    @IBAction func loginButton(_ sender: Any) {
-=======
     func load() -> Data? {
         guard let fileLocation = Bundle.main.url(forResource: "temp", withExtension: "json") else { return nil }
->>>>>>> main
-        
+            
         do {
             let data = try Data(contentsOf: fileLocation)
             return data
@@ -72,8 +68,9 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func signupButton(_ sender: Any) {
-<<<<<<< HEAD
+        
     }
+        
     @objc private func detectingLoginInput(_textField: UITextField){ //this function can detect user's login input.if user write wrong input,each input bar will change to red background and alert them to rewrite.
         let regularExpressionPattern = "^[a-zA-Z0-9]*$" //only alphabet,digits available
         var isWriteInput = _textField.text?.range(of: regularExpressionPattern, options: .regularExpression ) != nil
@@ -98,16 +95,5 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         self.idTextfield.addTarget(self, action: #selector(self.detectingLoginInput(_textField:)), for: .editingChanged)
         self.pwTextfield.addTarget(self, action: #selector(self.detectingLoginInput(_textField:)), for: .editingChanged)
-
-        // Do any additional setup after loading the view.
-    }
-
-=======
-        
->>>>>>> main
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
     }
 }
