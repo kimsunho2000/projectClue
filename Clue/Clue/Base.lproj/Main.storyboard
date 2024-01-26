@@ -38,6 +38,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Find ID/PW"/>
                                 <connections>
                                     <action selector="findButton:" destination="Cfl-PJ-ybP" eventType="touchUpInside" id="ylH-0M-se3"/>
+                                    <segue destination="ttQ-Gy-Zfg" kind="show" id="BqZ-Su-Pra"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXH-2H-lLy">
@@ -55,6 +56,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Sign up"/>
                                 <connections>
                                     <action selector="signupButton:" destination="Cfl-PJ-ybP" eventType="touchUpInside" id="nYo-A9-4jt"/>
+                                    <segue destination="kvf-O8-sxf" kind="show" id="76v-NV-v11"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bji-lS-O94">
@@ -167,6 +169,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wAx-Z2-Npd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1901.5267175572519" y="140.84507042253523"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MFK-kX-aIH">
+            <objects>
+                <viewController id="ttQ-Gy-Zfg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fkf-up-dk5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="aG8-S6-i2F"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aDV-6w-1N4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="biQ-wf-E4B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1550" y="907"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kE9-la-Kxn">
+            <objects>
+                <viewController id="kvf-O8-sxf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="roT-oM-fZV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Oar-aO-jG1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NNK-FB-Ko8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ShB-tF-zCm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2393" y="906"/>
         </scene>
     </scenes>
     <resources>
