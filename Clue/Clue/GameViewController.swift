@@ -10,6 +10,10 @@ import SpriteKit
 import GameplayKit
 
 class GameViewController: UIViewController {
+    var textValue: String = ""
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         if UIDevice.current.userInterfaceIdiom == .phone {

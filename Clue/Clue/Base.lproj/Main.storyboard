@@ -46,7 +46,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Login"/>
                                 <connections>
                                     <action selector="loginButton:" destination="Cfl-PJ-ybP" eventType="touchUpInside" id="4gd-5n-4SY"/>
-                                    <segue destination="BV1-FR-VrT" kind="show" id="S0k-3F-KGw"/>
+                                    <segue destination="VuC-yH-gdL" kind="show" id="r1Z-ZI-MJw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7EA-yN-i7C">
@@ -89,7 +89,6 @@
                     <navigationItem key="navigationItem" title="Login" id="452-f2-Ksm"/>
                     <connections>
                         <outlet property="idTextfield" destination="3YS-rx-NYa" id="oAY-f3-QEd"/>
-                        <outlet property="loginButton" destination="KXH-2H-lLy" id="UPZ-OF-J2p"/>
                         <outlet property="pwTextfield" destination="Dna-IW-2Vp" id="uRn-h0-Znb"/>
                         <outlet property="welcomeLabel" destination="Bji-lS-O94" id="y26-cP-0UC"/>
                     </connections>
@@ -98,6 +97,35 @@
                 <exit id="nzI-UQ-i37" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2828.2442748091603" y="140.84507042253523"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="CHT-4q-0Uq">
+            <objects>
+                <viewController id="VuC-yH-gdL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ylM-fP-c33">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTy-Go-4bb">
+                                <rect key="frame" x="159" y="720" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="tempButton:" destination="6Ap-3X-8vm" eventType="touchUpInside" id="MNd-Nj-JcE"/>
+                                    <segue destination="BV1-FR-VrT" kind="show" id="Q7H-wc-8Ek"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dDA-If-Lz4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="hS5-cG-9kJ" userLabel="Home"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yta-DN-hoX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="6Ap-3X-8vm" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3749" y="141"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
@@ -113,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3834" y="141"/>
+            <point key="canvasLocation" x="4680" y="141"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Z3G-0j-qMr">

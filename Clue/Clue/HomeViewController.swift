@@ -1,35 +1,20 @@
 //
-//  LoginViewController.swift
+//  HomeViewController.swift
 //  Clue
 //
-//  Created by 김선호 on 1/25/24.
+//  Created by 김선호 on 1/26/24.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
-    
-    @IBOutlet weak var welcomeLabel: UILabel!
-    
-    @IBOutlet weak var idTextfield: UITextField!
-    
-    @IBOutlet weak var pwTextfield: UITextField!
-    
-    @IBAction func loginButton(_ sender: Any) {
-        
-    }
-    
-    @IBAction func findButton(_ sender: Any) {
-    }
-    
-    @IBAction func signupButton(_ sender: Any) {
+class HomeViewController: UIViewController {
+
+    @IBAction func tempButton(_ sender: Any) {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
-
     }
     
 
@@ -43,3 +28,4 @@ class LoginViewController: UIViewController {
     }
     */
 
+}
